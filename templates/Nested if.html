@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color:greenyellow">Nested condition </h1>
+
+        {% if x > y %}
+            {% if x > z  %}
+                <h1>x is maximum</h1>
+                <h1>This is inside if-if block</h1>
+            {% else %}
+                <h1>z is maximun</h1>
+                <h1>this is inside if-if-else block</h1>
+            {% endif %}
+        {% else %}
+            {% if y > z %}
+                <h1>y is maximum</h1>
+                <h1>This is inside Else-if block</h1>
+            {% else %}
+                <h1>z is maximum</h1>
+                <h1>This is inside the Else-if-else Block</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
